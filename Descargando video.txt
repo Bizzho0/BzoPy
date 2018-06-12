@@ -1,0 +1,31 @@
+Para instalar en tu equipo windows, solamente necesitas descargar el ejecutable .exe y agregarlo en tu PATH para poder llamarlo desde la terminal (CMD) de Windows. 
+
+Nota importante: "El archivo .exe puede estar en cualquier lugar de tu equipo excento en C:\Windows\System32.
+
+Instalación en sistemas Unix.
+
+Para cualquier sistema basado en Unix, podemos instalar con las siguientes 2 líneas de comando:
+
+sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+sudo chmod a+rx /usr/local/bin/youtube-dl
+
+Si no tienes la posibilidad de utilizar la herramienta curl, entonces ejecuta lo siguiente:
+
+sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
+sudo chmod a+rx /usr/local/bin/youtube-dl
+
+Forma básica de uso.
+
+A continuación veremos algunas formas básicas de cómo podemos utiilzar esta herramienta.
+
+Descargando video.
+
+youtube-dl https://www.youtube.com/watch?v=YgtL4S7Hrwo
+
+Descargar una lista completa:
+
+youtube-dl https://www.youtube.com/playlist?list=PLLj6w0Thbv00Ij2yYC5PJOUaD_xuQcm7O
+
+Descargar un video en un formato especificado:
+
+youtube-dl https://www.youtube.com/watch?v=YgtL4S7Hrwo -f mp4
